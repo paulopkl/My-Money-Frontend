@@ -1,15 +1,23 @@
-# My Money App Backend
+# My Money App Frontend
 
 ## Table of Contents
 
 - [About](#about)
+- [Technologies](#tech)
 - [Getting Started](#getting_started)
 - [Usage](#usage)
 - [Contributing](../CONTRIBUTING.md)
 
 ## About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+this project should be used to mark your purchases and sales of products.
+
+## Techonologies <a name = "tech"></a>
+
+- [x] React v16
+- [x] Redux, Redux-Form, Redux-Multi, Redux-Promise, Redux-Thunk
+- [x] admin-lte, Bootstrap 4
+- [x] Ionicons, Font-awesome
 
 ## Getting Started <a name = "getting_started"></a>
 
