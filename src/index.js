@@ -11,7 +11,7 @@ import reduxThunk from 'redux-thunk';
 import AuthOrApp from './main/AuthOrApp';
 import reducers from './main/reducers';
 
-const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 const store = applyMiddleware(reduxPromise, reduxMulti, reduxThunk)(createStore)(reducers, devTools);
 
 ReactDOM.render(
