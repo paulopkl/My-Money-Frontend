@@ -21,21 +21,46 @@ class Dashboard extends React.Component {
     }
 
     render() {
+        const summaryDebt = 
+            (this.props 
+            && this.props.summary 
+            && this.props.summary.debt
+            && this.props.summary.debt.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }))
+            || 0.0;
+            
+        const summaryCredit = 
+            (this.props
+            && this.props.summary 
+            && this.props.summary.credit
+            && this.props.summary.credit.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }))
+            || 0.0;
+
         return (
             <div>
                 <ContentHeader title="Dashboard" small="Version 1.0" />
                 <Content>
                     <Row>
-                        <ValueBox cols="12 4" color="green" icon="bank" 
-                            value={this.props.summary.credit.toLocaleString('pt-br', { style: 'currency', 
-                                currency: 'BRL' })} text="Total Credits" />
-                        <ValueBox cols="12 4" color="red" icon="credit-card" 
-                            value={this.props.summary.debt.toLocaleString('pt-br', { style: 'currency', 
-                                currency: 'BRL' })} text="Total Debits" />
-                        <ValueBox cols="12 4" color="blue" icon="money" 
-                            value={(this.props.summary.credit - this.props.summary.debt)
-                                .toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })} 
-                            text="Consolidated Value" />
+                        <ValueBox 
+                            cols="12 4" 
+                            color="green" 
+                            icon="bank" 
+                            value={summaryCredit} 
+                            text="Total Credits" 
+                        />
+                        <ValueBox 
+                            cols="12 4" 
+                            color="red" 
+                            icon="credit-card" 
+                            value={summaryDebt} 
+                            text="Total Debits" 
+                        />
+                        <ValueBox 
+                            cols="12 4" 
+                            color="blue" 
+                            icon="money" 
+                            value={summaryCredit} 
+                            text="Consolidated Value" 
+                        />
                     </Row>
                 </Content>
             </div>
