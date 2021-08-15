@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "admin-lte": "2.3.11",
     "axios": "0.18.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "font-awesome": "4.7.0",
     "ionicons": "4.4.3",
@@ -46,8 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "cors": "^2.8.5"
   }
 }
