@@ -19,6 +19,7 @@ class AuthOrApp extends React.Component {
 
     render() {
         const { user, validToken } = this.props.auth;
+
         if (user && validToken) {
             axios.defaults.headers.common['authorization'] = user.token;
             return (
@@ -29,7 +30,8 @@ class AuthOrApp extends React.Component {
         } else if (!user && !validToken) {
             return <Auth />
         } else {
-            return false;
+            console.log(this.props);
+            return null;
         }
     }
 }

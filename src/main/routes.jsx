@@ -2,8 +2,8 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router';
 
 // import AuthOrApp from './AuthOrApp';
-import Dashboard from '../Dashboard/Dashboard';
 // import Dashboard from '../Dashboard2/Dashboard2';
+import Dashboard from '../Dashboard/Dashboard';
 import BillingCycle from '../billingCycle/BillingCycle';
 
 const Routes = props => (

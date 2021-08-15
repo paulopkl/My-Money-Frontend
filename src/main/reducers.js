@@ -11,9 +11,9 @@ const rootReducer = combineReducers({
     dashboard: DashboardReducer,
     tab: TabReducer,
     billingCycle: BillingCycleReducer,
+    auth: AuthReducer,
     form: formReducer,
     toastr: toastrReducer,
-    auth: AuthReducer
 });
 
 export default rootReducer;
